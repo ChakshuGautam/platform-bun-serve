@@ -1,4 +1,4 @@
-lockfileVersion: 5.4
+lockfileVersion: 5.3
 
 importers:
 
@@ -13,8 +13,8 @@ importers:
       typescript: ^4.7.4
       uWebSockets.js: github:uNetworking/uWebSockets.js#v20.10.0
     dependencies:
-      '@nestjs/common': 8.4.7_j5hagqx4mwzscud4kyjdvubauy
-      '@nestjs/core': 8.4.7_zyw32gfu5yv6lfoz64j5eiekme
+      '@nestjs/common': 8.4.7_4f4e0342fc65b321507c56123ad020a6
+      '@nestjs/core': 8.4.7_ce2dbd18b4ee2be595d9f713d2208a61
       http-status-codes: 2.2.0
       reflect-metadata: 0.1.13
       rxjs: 7.5.6
@@ -33,13 +33,15 @@ importers:
       nestjs-platform-uws: workspace
       reflect-metadata: ^0.1.12
       rxjs: ^7.5.6
+      source-map-support: ^0.5.21
       typescript: ^4.7.4
     dependencies:
-      '@nestjs/common': 8.4.7_j5hagqx4mwzscud4kyjdvubauy
-      '@nestjs/core': 8.4.7_zyw32gfu5yv6lfoz64j5eiekme
+      '@nestjs/common': 8.4.7_4f4e0342fc65b321507c56123ad020a6
+      '@nestjs/core': 8.4.7_ce2dbd18b4ee2be595d9f713d2208a61
       nestjs-platform-uws: link:..
       reflect-metadata: 0.1.13
       rxjs: 7.5.6
+      source-map-support: 0.5.21
     devDependencies:
       '@types/node': 18.0.5
       '@types/tmp': 0.2.3
@@ -80,7 +82,7 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@nestjs/common/8.4.7_j5hagqx4mwzscud4kyjdvubauy:
+  /@nestjs/common/8.4.7_4f4e0342fc65b321507c56123ad020a6:
     resolution: {integrity: sha512-m/YsbcBal+gA5CFrDpqXqsSfylo+DIQrkFY3qhVIltsYRfu8ct8J9pqsTO6OPf3mvqdOpFGrV5sBjoyAzOBvsw==}
     peerDependencies:
       cache-manager: '*'
@@ -106,7 +108,7 @@ packages:
       - debug
     dev: false
 
-  /@nestjs/core/8.4.7_zyw32gfu5yv6lfoz64j5eiekme:
+  /@nestjs/core/8.4.7_ce2dbd18b4ee2be595d9f713d2208a61:
     resolution: {integrity: sha512-XB9uexHqzr2xkPo6QSiQWJJttyYYLmvQ5My64cFvWFi7Wk2NIus0/xUNInwX3kmFWB6pF1ab5Y2ZBvWdPwGBhw==}
     requiresBuild: true
     peerDependencies:
@@ -124,7 +126,7 @@ packages:
       '@nestjs/websockets':
         optional: true
     dependencies:
-      '@nestjs/common': 8.4.7_j5hagqx4mwzscud4kyjdvubauy
+      '@nestjs/common': 8.4.7_4f4e0342fc65b321507c56123ad020a6
       '@nuxtjs/opencollective': 0.3.2
       fast-safe-stringify: 2.1.1
       iterare: 1.2.1
@@ -219,6 +221,10 @@ packages:
       balanced-match: 1.0.2
       concat-map: 0.0.1
     dev: true
+
+  /buffer-from/1.1.2:
+    resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
+    dev: false
 
   /callsites/3.1.0:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
@@ -705,6 +711,18 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
     dev: true
+
+  /source-map-support/0.5.21:
+    resolution: {integrity: sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==}
+    dependencies:
+      buffer-from: 1.1.2
+      source-map: 0.6.1
+    dev: false
+
+  /source-map/0.6.1:
+    resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==}
+    engines: {node: '>=0.10.0'}
+    dev: false
 
   /strip-ansi/6.0.1:
     resolution: {integrity: sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==}

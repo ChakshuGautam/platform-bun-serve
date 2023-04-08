@@ -43,9 +43,7 @@ export class UwsAdapter extends AbstractHttpAdapter<ServerWrapper, uws.HttpReque
 
     public listen(port: string, callback?: unknown): any {
         const hostname: string = "0.0.0.0";
-        console.log('listen', {port, hostname, s: this.server});
         this.server.listen("0.0.0.0", (port as unknown as number) | 0, callback as (listenSocket: uws.us_listen_socket | false) => void);
-        
     }
 
     private injectConstraintsIfVersioned(
@@ -125,7 +123,6 @@ export class UwsAdapter extends AbstractHttpAdapter<ServerWrapper, uws.HttpReque
     }
     reply(response: uws.HttpResponse, body: any, statusCode?: number | undefined) {
         
-        console.log('reply', {response, body, statusCode})
         if (statusCode) {
             setStatus(response, statusCode.toString());
         }
