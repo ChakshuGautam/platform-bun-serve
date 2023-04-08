@@ -1,3 +1,3 @@
-# NestJS uWebSockets.JS Adapter
+# NestJS Bun.serve Adapter
 
-This is a NestJS Adapter for [uWebSockets.JS](https://github.com/uNetworking/uWebSockets.js), a performance-focused HTTP / WebSocket server.
+This is a NestJS Adapter for [bun.serve](https://bun.sh/docs/api/http), a performance-focused HTTP/WebSocket server.
